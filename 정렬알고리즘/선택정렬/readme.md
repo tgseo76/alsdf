@@ -26,4 +26,7 @@ for i in range(0,len(arr)-1):
     arr[i]=arr[max_idx]
     arr[max_idx]=tem
 print(arr) # [223, 111, 39, 23, 10, 9, 7, 4, 3, 2]
+
+
+
 ```

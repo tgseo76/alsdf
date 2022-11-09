@@ -9,7 +9,11 @@
 #             for j in range(2*i,n+1,i):
 #                 arr[j]=False
 #
-#
-#     cnt=arr.count(True)-2
+#     소수의 갯수
+#     cnt=arr.count(True)-2 #0,1은 소수가 아니라서 -2
 #     return cnt
+
+     소수 출력
+     for i in range(2,len(arr+1):
+     print(i,end=' ')
 ```

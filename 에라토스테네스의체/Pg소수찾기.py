@@ -1,3 +1,8 @@
+'''
+https://school.programmers.co.kr/learn/courses/30/lessons/12921
+10 4
+5 3
+'''
 import math
 
 def solution(n):

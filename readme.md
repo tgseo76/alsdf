@@ -7,7 +7,7 @@ input = sys.stdin.readline
 파이썬 스왑
 a,b=b,a  
 
-리스트 = & copy()
+리스트복사 = & copy()
 list_A = ["ABC","DEF"]              list_A = ["ABC","DEF"]
 list_B = list_A.copy()              list_B = list_A
 list_A.append("GHI")                list_A.append("GHI")

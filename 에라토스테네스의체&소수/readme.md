@@ -2,7 +2,7 @@
 
 ``` python
  def solution(n):
-     arr = [True]*(n+1)
+     arr = [True]*(n+1) ==> [True for i in range(n+1)]
      cnt=0
      for i in range(2,int(math.sqrt(n))+1):
          if arr[i]==True:
@@ -17,4 +17,16 @@
 #    for i in range(2,len(arr+1):
 #         print(i,end=' ')
 
+
+
+l_cnt=0
+
+for i in k:
+    cnt=0
+    if i>1:
+        for j in range(2,i):
+            if i%j==0:
+                cnt+=1
+        if cnt==0:
+            l_cnt+=1
 ```

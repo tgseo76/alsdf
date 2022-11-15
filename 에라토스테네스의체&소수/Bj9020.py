@@ -12,7 +12,9 @@ https://www.acmicpc.net/problem/9020
 '''
 import math
 
-while(True):
+t=int(input())
+
+for _ in range(t):
     n=int(input())
 
     arr=[True]*(n+1)
@@ -22,7 +24,20 @@ while(True):
         if arr[i]==True:
             for j in range(2*i,n+1,i):
                 arr[j]=False
+        # arr이 len(arr)을 대칭으로 좌우가 T&F 대칭이다
+        # 8
+        # [False, False, True, True, False, True, False, True, False]
+        # 10
+        # [False, False, True, True, False, True, False, True, False, False, False]
+        # 16
+        # [False, False, True, True, False, True, False, True, False, False, False, True, False, True, False, False, False]
 
-
-
-
+        l = int((len(arr)/2))
+        r = int((len(arr)/2))
+    while(1):
+        if((arr[l] and arr[r]) and l+r==n):
+            print(l,r)
+            break
+        else:
+            l-=1
+            r+=1

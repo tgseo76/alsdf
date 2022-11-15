@@ -24,7 +24,7 @@ for _ in range(t):
         if arr[i]==True:
             for j in range(2*i,n+1,i):
                 arr[j]=False
-        # arr이 len(arr)을 대칭으로 좌우가 T&F 대칭이다
+        # arr이 len(arr)을 대칭으로 l+r ==n && 좌우가 T
         # 8
         # [False, False, True, True, False, True, False, True, False]
         # 10

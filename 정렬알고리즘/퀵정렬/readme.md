@@ -16,9 +16,9 @@ def quick_sort(arr,st,en):
         while(right>st and arr[right]>=arr[pivot]):# 오른쪽에서부터 피벗보다 작은 값 찾기
             right-=1
 
-        if(left>right): #엇갈리면 스왑 [5,4,2,0,3,1,6,9,7,8] ==> [1,4,2,0,3,5,6,9,7,8]
+        if(left>right): #엇갈리면 스왑
             arr[right],arr[pivot]=arr[pivot],arr[right]
-        else: # 엇갈리지 않았으면 스왑 [5,7,9,0,3,1,6,2,4,8] ==> [5,4,9,0,3,1,6,2,7,8]
+        else: # 엇갈리지 않았으면 스왑
             arr[left],arr[right]=arr[right],arr[left]
 
     quick_sort(arr,st,right-1) # 분할 후 왼쪽부분 

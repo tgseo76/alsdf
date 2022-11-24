@@ -17,4 +17,4 @@ if nums[mid]<target:
 else:
     search(st,mid,target)
 ```
-bj1920=수찾기
+bj1920=수찾기  

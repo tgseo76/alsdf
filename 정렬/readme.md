@@ -7,5 +7,4 @@ g_list.sort(key=lambda x:x[1])
 ==> (key=lambda x:x[1]) # = y좌표값 정렬 
 
 g_list.sort(key=lambda x : len(x) )  =길이값비교
-
 ```

@@ -34,7 +34,6 @@ for i in range(n):
                 break
             else:
                 chk.append(i[k+1])
-
     if err==0:
         cnt+=1
 

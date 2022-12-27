@@ -23,21 +23,19 @@ def bfs(x,y):
     while q:
         a,b=q.popleft()
 
+        if a == c and b == d:
+            print(graph[a][b] - 1)
+            return True
+
         for i in range(8):
             nx = a+dx[i]
             ny = b+dy[i]
-
-            if a==c and b==d:
-                print(graph[a][b]-1)
-                return True
 
             if nx<0 or ny<0 or nx>=l or ny>=l:
                 continue
             if graph[nx][ny]==0:
                 graph[nx][ny]=graph[a][b]+1
                 q.append((nx,ny))
-    return False
-
 
 t=int(input())
 

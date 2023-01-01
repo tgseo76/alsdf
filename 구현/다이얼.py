@@ -1,3 +1,10 @@
+'''
+https://www.acmicpc.net/problem/5622
+
+UNUCIC
+
+36
+'''
 phone=["ABC","DEF","GHI","JKL","MNO","PQRS","TUV","WXYZ"]
 
 str=input()

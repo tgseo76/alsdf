@@ -10,6 +10,17 @@ a,b=b,a
 파이썬
 and : 논리 and연산
 & : 비트연산
+
+슬라이싱
+arr[start : end : step]
+arr=arr[start : end : step]
+
+>>> a = ['a', 'b', 'c', 'd', 'e']
+>>> a[ 1 :  ]
+['b', 'c', 'd', 'e']
+
+>>> a[ -3 :  ]
+['c', 'd', 'e']
 ```
 ## 리스트
 ```python
@@ -59,6 +70,11 @@ sys.setrecursionlimit(10**9)
 ```python
 arr1.sort() 오름차순 // 0 ,1 ,2 ,3,4
 arr2.sort(reverse=True) 내림차순 5, 4 , 3 ,2,1
+
+sort & sorted()
+dap.sort() ==> dap이 바로 정렬됨
+sorted(dap) ==> dap은 변화가 없음 =>print(sorted(dap)) 리턴값으로 정렬
+
 
 (key=lambda x: (x[1], x[0])) y축정렬후 x
 g_list.sort(key=lambda x:x[1])   

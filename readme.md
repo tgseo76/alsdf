@@ -1,26 +1,40 @@
 # py
+
 ```python
-입력 속도
+import math
+
+입력
+속도
 import sys
+
 input = sys.stdin.readline
 
-파이썬 스왑
-a,b=b,a  
+파이썬
+스왑
+a, b = b, a
 
 파이썬
-and : 논리 and연산
-& : 비트연산
+and: 논리
+and연산
+&: 비트연산
 
 슬라이싱
-arr[start : end : step]
-arr=arr[start : end : step]
+arr[start: end: step]
+arr = arr[start: end: step]
 
->>> a = ['a', 'b', 'c', 'd', 'e']
->>> a[ 1 :  ]
+>> > a = ['a', 'b', 'c', 'd', 'e']
+>> > a[1:]
 ['b', 'c', 'd', 'e']
 
->>> a[ -3 :  ]
+>> > a[-3:]
 ['c', 'd', 'e']
+
+제곱(pow),제곱근(sqrt)
+math.pow(x,y) ==> x의 y제곱 math.pow(12,2) ==> 144.0
+
+math.sqrt(x) ==> x의 제곱근 math.sqrt(121) ==> 11.0  
+
+
 ```
 ## 리스트
 ```python
@@ -33,6 +47,21 @@ print(*lst, sep = ',') ==> x,y,z
 list2 = list1.copy()
 list2 = list(list1)
 list2 = [] + list1
+
+리스트로
+12345 = > [1,2,3,4,5]
+==> n=list(map(int,input().strip()))
+
+n=list(map(int,str(n))) ==> [1,2,3,4,5]
+
+리스트 reverse
+[1,2,3,4,5] => [5,4,3,2,1]
+==> 
+n.reverse() => print(n) ==> [5,4,3,2,1]
+
+n=reversed(n) => print() ==> <list_reverseiterator object at 0x000002EFE79E9300>
+==> print(list(n)) ==> [5,4,3,2,1]
+
 ```
 ##  큐
 ```python

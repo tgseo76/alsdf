@@ -34,6 +34,12 @@ math.pow(x,y) ==> x의 y제곱 math.pow(12,2) ==> 144.0
 
 math.sqrt(x) ==> x의 제곱근 math.sqrt(121) ==> 11.0  
 
+문자열 출력
+김서방은 1에 있다 ==> "김서방은 "+cnt+"에 있다" ==> 오류
+answer = "김서방은 " + str(cnt) + "에 있다" ==> 서방은 1에 있다
+
+"김서방은 {}에 있다".format(cnt) ==> 김서방은 1에 있다.
+
 
 ```
 ## 리스트
@@ -61,6 +67,21 @@ n.reverse() => print(n) ==> [5,4,3,2,1]
 
 n=reversed(n) => print() ==> <list_reverseiterator object at 0x000002EFE79E9300>
 ==> print(list(n)) ==> [5,4,3,2,1]
+
+리스트 합치기
+s= ['1', '2', '3', '4', '5']
+s1="".join(s) ==> 12345 (str) 
+
+s1="_".join(s) ==> 1_2_3_4_5
+
+리스트 차집합
+ListA = [10,9,8,7,6,5,4,3,2,1] # 자연수
+ListB = [1,3,5,7,9] # 홀수
+
+ListC = [x for x in ListA if x not in ListB] # ListB에 포함되어 있지 않을 때만 ListA의 원소를 추가 ==> ListC: [10, 8, 6, 4, 2]
+ListD = list(set(ListA) - set(ListB)) # 집합으로 만들어 빼기 ==> ListD: [2, 4, 6, 8, 10]
+
+
 
 ```
 ##  큐

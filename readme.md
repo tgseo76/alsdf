@@ -1,8 +1,6 @@
 # py
 
 ```python
-import math
-
 입력
 속도
 import sys
@@ -41,6 +39,11 @@ answer = "김서방은 " + str(cnt) + "에 있다" ==> 서방은 1에 있다
 "김서방은 {}에 있다".format(cnt) ==> 김서방은 1에 있다.
 
 
+if int(i**0.5)==i**0.5:
+    제곱근이 있으면 약수의 갯수 홀수 9 => 1 3 9        10 = > 1 2 5 10 
+
+
+
 ```
 ## 리스트
 ```python
@@ -59,6 +62,13 @@ list2 = [] + list1
 ==> n=list(map(int,input().strip()))
 
 n=list(map(int,str(n))) ==> [1,2,3,4,5]
+
+s="123456"
+s=list(s) => ['1', '2', '3', '4', '5', '6']
+
+s=123456
+a=list(map(str,str(a))) => ['1', '2', '3', '4', '5', '6']
+a=list(map(int,str(a))) => [1, 2, 3, 4, 5, 6]
 
 리스트 reverse
 [1,2,3,4,5] => [5,4,3,2,1]
@@ -82,6 +92,20 @@ ListC = [x for x in ListA if x not in ListB] # ListB에 포함되어 있지 않�
 ListD = list(set(ListA) - set(ListB)) # 집합으로 만들어 빼기 ==> ListD: [2, 4, 6, 8, 10]
 
 
+합집합
+lst1 = ['A', 'B', 'C', 'D']
+lst2 = ['C', 'D', 'E', 'F']
+
+union = list(set(lst1) | set(lst2))
+print( union ) # ['C', 'F', 'A', 'E', 'B', 'D']
+
+교집합
+intersection = list(set(lst1) & set(lst2))
+print( intersection ) # ['C', 'D']
+
+차집합
+complement = list(set(lst1) - set(lst2))
+print( complement ) # ['B', 'A']
 
 ```
 ##  큐

@@ -42,6 +42,13 @@ answer = "김서방은 " + str(cnt) + "에 있다" ==> 서방은 1에 있다
 if int(i**0.5)==i**0.5:
     제곱근이 있으면 약수의 갯수 홀수 9 => 1 3 9        10 = > 1 2 5 10 
 
+진법 계산 int(str, 진법)
+base="0021"
+print(int(base,3)) #==>7
+
+조합
+from itertools import combinations
+
 
 
 ```

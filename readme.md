@@ -50,6 +50,16 @@ print(int(base,3)) #==>7
 from itertools import combinations
 
 
+람다 정렬
+e = sorted(a, key = lambda x : (x[0], -x[1]))  # -반대차순
+=> [(0, 1), (1, 2), (3, 0), (5, 2), (5, 1)]
+
+s = ['2 A', '1 B', '4 C', '1 A']
+s.sorted(s, key=lambda x: (x.split()[1], x.split()[0]))
+
+
+
+
 
 ```
 ## 리스트

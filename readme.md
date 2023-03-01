@@ -51,7 +51,7 @@ from itertools import combinations
 
 
 람다 정렬
-e = sorted(a, key = lambda x : (x[0], -x[1]))  # -반대차순
+e = sorted(a, key = lambda x : (x[0], -x[1]))  #x[0]을 기준 오름차순, x[0]이 같다면 -x[1](x의 내림차순)을 정렬
 => [(0, 1), (1, 2), (3, 0), (5, 2), (5, 1)]
 
 s = ['2 A', '1 B', '4 C', '1 A']

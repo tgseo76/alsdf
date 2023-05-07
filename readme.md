@@ -48,7 +48,8 @@ print(int(base,3)) #==>7
 
 조합
 from itertools import combinations
-
+c_sum=list(combinations(a,2))   2개조합 리스트
+for i in combinations(a,3):      i에 3개씩 sum같은거 쓸수있음
 
 람다 정렬
 e = sorted(a, key = lambda x : (x[0], -x[1]))  #x[0]을 기준 오름차순, x[0]이 같다면 -x[1](x의 내림차순)을 정렬
